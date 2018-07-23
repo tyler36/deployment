@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="phpcs_with_full_reports">
+    <!--
+       The name attribute of the ruleset tag is displayed
+       when running PHP_CodeSniffer with the -v command line
+       argument. The description tag below is not displayed anywhere
+       except in this file, so it can contain information for
+       developers who may change this file in the future.
+     -->
+    <description>Generate report files</description>
+
+    <!-- Reports -->
+    <!--<arg name="report-full"/>-->
+    <!--<arg name="report-summary" value="./storage/reports/phpcs/phpcs_summary.txt"/>-->
+    <!--<arg name="report-full" value="./storage/reports/phpcs/phpcs_full.txt"/>-->
+    <arg name="report-full"/>
+    <arg name="report-summary" value="./storage/reports/phpcs/phpcs_summary.txt"/>
+    <arg name="report-info" value="./storage/reports/phpcs/phpcs_info.txt"/>
+    <arg name="report-xml" value="./storage/reports/phpcs/phpcs.xml"/>
+    <arg name="report-checkstyle" value="./storage/reports/phpcs/phpcs_checkstyle.xml"/>
+    <arg name="report-csv" value="./storage/reports/phpcs/phpcs.csv"/>
+
+    <rule ref="ruleset.xml"/>
+</ruleset>

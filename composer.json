@@ -1,0 +1,29 @@
+{
+    "name": "tyler36/deployment",
+    "description": "Run through some commands for deployment",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Tyler36\\Deployment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tyler36\\Deployment\\DeploymentServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "lint": [
+            "@phpfix",
+            "@phpcs"
+        ],
+        "phpcs": "phpcs -p --standard=phpcs.xml",
+        "phpfix": "php-cs-fixer fix --show-progress=dots --allow-risky=yes"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.12",
+        "squizlabs/php_codesniffer": "^3.3"
+    }
+}
