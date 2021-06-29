@@ -16,7 +16,7 @@ class DeploymentServiceProvider extends ServiceProvider
     public function boot()
     {
         // CONFIG
-        $this->publishes([__DIR__.'/Confirmation.php' => app_path('Confirmation.php')]);
+        $this->publishes([__DIR__.'/Config/deployment.php' => config_path('deployment.php')]);
 
         // Import commands
         if ($this->app->runningInConsole()) {
