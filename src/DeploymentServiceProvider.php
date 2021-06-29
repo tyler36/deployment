@@ -3,6 +3,8 @@
 namespace Tyler36\Deployment;
 
 use Illuminate\Support\ServiceProvider;
+use Tyler36\Deployment\Commands\Environment;
+use Tyler36\Deployment\Commands\Setup;
 
 class DeploymentServiceProvider extends ServiceProvider
 {

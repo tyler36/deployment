@@ -1,6 +1,6 @@
 <?php
 
-namespace Tyler36\Deployment;
+namespace Tyler36\Deployment\Commands;
 
 use Illuminate\Console\Command;
 
